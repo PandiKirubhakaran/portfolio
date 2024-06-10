@@ -1,0 +1,31 @@
+/* NavBar.module.css */
+.navBar {
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+  }
+  
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navBarContainer li {
+    margin: 0 10px;
+  }
+  
+  .navBarContainer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
