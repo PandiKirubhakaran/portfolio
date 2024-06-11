@@ -1,17 +1,16 @@
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
-import NavBar from './component/NavBar'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './styles/App.css';
-import Home from './component/Home';
-import About from './component/About';
-import Projects from './component/Projects';
-import Skills from './component/Skills';
-import Contact from './component/Contact';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,4 +24,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
