@@ -13,3 +13,7 @@ export enum NAVBARTITLES {
   SKILLS_TITLE = "Skills",
   CONTACT_TITLE = "Contact",
 }
+
+export enum HOMETITLES {
+  HELLO="HELLO..."
+}
