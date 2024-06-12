@@ -1,8 +1,7 @@
+import classes from "../../assets/styles/Home.module.css";
 
 const Profile = () => {
-  return (
-    <div>Profile</div>
-  )
-}
+  return <div className={classes.img}></div>;
+};
 
-export default Profile
+export default Profile;

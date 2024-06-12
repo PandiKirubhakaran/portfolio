@@ -1,19 +1,11 @@
-*{
-  width: 100%;
-}
 body{
   margin: 0 auto;
   padding: 0;
   background-color: #1D232A;
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* max-width: 1280px; */
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 20px;
 }
