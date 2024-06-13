@@ -1,9 +1,9 @@
 export enum Routes {
-  HOME = "/",
-  ABOUT = "/about",
-  PROJECTS = "/projects",
-  SKILLS = "/skills",
-  CONTACT = "/contact",
+  HOME = "#home",
+  ABOUT = "#about",
+  PROJECTS = "#projects",
+  SKILLS = "#skills",
+  CONTACT = "contact",
 }
 
 export enum NAVBARTITLES {
