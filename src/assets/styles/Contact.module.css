@@ -1,0 +1,92 @@
+.myContact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.myContact > div:first-child {
+  margin-right: 25px;
+}
+
+.myContact h3,
+.myContact h4 {
+  margin: 0;
+}
+
+.icon {
+  font-size: 35px;
+  color: #e58c33;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2A323C;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fields {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .field {
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  
+  .field input,
+  .field textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #2A323C; 
+    color: #fff; 
+    font-size: 16px;
+  }
+  
+  .field input::placeholder,
+  .field textarea::placeholder {
+    color: #ccc; 
+  }
+  
+  .field input:focus,
+  .field textarea:focus {
+    border-bottom: 1px solid #04d9ff;
+    outline: none;
+  }
+  
+  .field.name {
+    margin-right: 10px;
+  }
+  
+  .field.email {
+    margin-left: 10px !important;
+  }
+  .field.textarea textarea {
+    height: 85px; 
+  }
+  
+  .buttonArea {
+    text-align: center;
+  }
+  
+  .buttonArea button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #e58c33;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .buttonArea button:hover {
+    background: #ee7904;
+  }
+  
