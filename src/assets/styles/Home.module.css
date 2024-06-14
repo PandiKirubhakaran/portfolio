@@ -38,12 +38,6 @@
   overflow: hidden;
   animation: animate 6s linear 1;
 }
-/* .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-} */
 
 .img {
   background: url(../images/profile.webp);
@@ -66,13 +60,9 @@
 }
 
 .content {
-  /* text-align: center; */
   position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 100%;
-  
+  width: 50%;
+  white-space: nowrap; 
 }
 
 .content span {
@@ -157,7 +147,7 @@
   }
   70%,
   90% {
-    width: 100%;
+    width: 40%;
   }
 }
 
@@ -170,5 +160,15 @@
   }
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainHome{
+   display: block;
+   margin: 0 auto;
+  }
+  .tag{
+    font-size: 40px;
   }
 }
