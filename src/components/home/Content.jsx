@@ -1,6 +1,6 @@
-import classes from "../../assets/styles/Home.module.css";
-import { HOMETITLES } from "../../enum";
-import Resume from "./Resume";
+import classes from '../../assets/styles/Home.module.css';
+import { HOMETITLES } from '../../enum';
+import Resume from './Resume';
 const Content = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Content = () => {
       <h3 className={classes.hello} data-text={HOMETITLES.TAGLINE}>
         {HOMETITLES.TAGLINE}
       </h3>
-      <Resume/>
+      <Resume />
     </div>
   );
 };

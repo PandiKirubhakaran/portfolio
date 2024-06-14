@@ -8,9 +8,11 @@ html {
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #0199b4;
 }
@@ -19,7 +21,7 @@ html {
   background: #05d8fe;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #1D232A;
@@ -32,13 +34,10 @@ body{
   padding: 0 20px;
 }
 
-.heading{
+.heading {
   font-size: 40px;
   font-weight: 600;
   color: #a6adb5;
   letter-spacing: 2px;
-  /* margin-top: 100px; */
   padding-top: 100px;
 }
-
-/* src/index.css or src/App.css */

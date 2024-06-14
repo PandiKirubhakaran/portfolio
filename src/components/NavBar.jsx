@@ -1,14 +1,26 @@
+import { useState } from "react";
 import classes from "../assets/styles/NavBar.module.css";
 import styles from "../assets/styles/App.module.css";
 import { NAVBARTITLES } from "../enum";
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className={classes.navBar}>
       <div className={styles.container}>
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',color:'#04d9ff'}}>
-          <h2 >Kirubha</h2>
-          <ul className={classes.navBarContainer}>
+        <div className={classes.navBarWrapper}>
+          <h2>{NAVBARTITLES.PORTFOLIO}</h2>
+          {/* Display menu icon if screen width is less than 900px */}
+          <div className={classes.menuIcon} onClick={toggleMenu}>
+            <i className="fa fa-bars"></i>
+          </div>
+          {/* Menu items */}
+          <ul className={`${classes.navBarContainer} ${menuOpen ? classes.showMenu : ""}`}>
             <li>
               <a href="#home">{NAVBARTITLES.HOME_TITLE}</a>
             </li>

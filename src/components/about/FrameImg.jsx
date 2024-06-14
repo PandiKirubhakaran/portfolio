@@ -1,4 +1,3 @@
-import React from 'react';
 import Profile from '../../assets/images/aboutPic.webp';
 import clasees from '../../assets/styles/About.module.css'
 

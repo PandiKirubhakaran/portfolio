@@ -1,62 +1,131 @@
+.skillsMainWrapper {
+  display: flex;
+  justify-Content: space-between
+}
+
 .skillsBarContainer {
-    position: relative;
-    width: 40%;
-    min-width: 500px;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    list-style: none;
-  }
-  
-  .skillsBarContainer li {
-    position: relative;
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .progressbarTitle {
-    color: #fff;
-  }
-  
-  .progressbarTitle h3 {
-    display: inline-block;
-  }
-  
-  .progressbarTitle .percent {
-    position: absolute;
-    right: 5px;
-  }
-  
-  .barContainer {
-    background: #555;
-    position: relative;
-    width: 100%;
-    height: 5px;
-    margin-top: 5px;
-    display: block;
-    border-radius: 5px;
-  }
-  
-  .progressbar {
-    position: absolute;
+  position: relative;
+  width: 40%;
+  min-width: 500px;
+  list-style: none;
+}
+
+.skillsBarContainer li {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.progressbarTitle {
+  color: #fff;
+}
+
+.progressbarTitle h3 {
+  display: inline-block;
+}
+
+.progressbarTitle .percent {
+  position: absolute;
+  right: 5px;
+}
+
+.barContainer {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-top: 5px;
+  display: block;
+  border-radius: 5px;
+}
+
+.progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.progressRed {
+  background-color: #c33f02;
+}
+
+.progressBlue {
+  background-color: #55c6fb;
+}
+
+.progressYellow {
+  background-color: #e8ef09;
+}
+
+.progressOrange {
+  background-color: #ffa500;
+}
+
+.progressGreen {
+  background-color: #26be53;
+}
+
+@keyframes progresshtml5 {
+  0% {
     width: 0%;
-    height: 100%;
-    border-radius: 5px;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
   }
-  
-  .progressRed { background-color: #c33f02; }
-  .progressBlue { background-color: #55c6fb; }
-  .progressYellow { background-color: #e8ef09; }
-  .progressOrange { background-color: #ffa500; }
-  .progressGreen { background-color: #26be53; }
-  
-  @keyframes progresshtml5 { 0% { width: 0%; } 100% { width: 98%; } }
-  @keyframes progresscss { 0% { width: 0%; } 100% { width: 80%; } }
-  @keyframes progressjavascript { 0% { width: 0%; } 100% { width: 70%; } }
-  @keyframes progressphp { 0% { width: 0%; } 100% { width: 55%; } }
-  @keyframes progressangularjs { 0% { width: 0%; } 100% { width: 65%; } }
-  
+
+  100% {
+    width: 98%;
+  }
+}
+
+@keyframes progresscss {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progressjavascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progressphp {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progressangularjs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+@media (max-width: 900px) {
+  .skillsMainWrapper {
+    display: block;
+  }
+
+  .skillsBarContainer {
+    min-width: 300px;
+  }
+}

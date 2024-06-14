@@ -1,4 +1,4 @@
-import classes from "../../assets/styles/Home.module.css";
+import classes from '../../assets/styles/Home.module.css';
 
 const Profile = () => {
   return <div className={classes.img}></div>;

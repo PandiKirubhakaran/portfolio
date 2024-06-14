@@ -7,11 +7,19 @@ export enum Routes {
 }
 
 export enum NAVBARTITLES {
+  PORTFOLIO = 'Kirubha',
   HOME_TITLE = 'Home',
   ABOUT_TITLE = 'About Me',
   PROJECTS_TITLE = 'Projects',
   SKILLS_TITLE = 'Skills',
   CONTACT_TITLE = 'Contact',
+}
+
+export enum PAGETITLES {
+  PAGE_ABOUT = 'About Me',
+  PAGE_CONTACT = 'Contact', 
+  PAGE_PROJECTS = 'Projects',
+  PAGE_SKILLS = 'Skills',
 }
 
 export enum HOMETITLES {
@@ -32,4 +40,14 @@ export enum ABOUTTITLES {
 
 export enum SKILLSTITLES {
   SKILL_PARA = 'As a versatile and driven web developer, I bring a robust skill set honed through diverse learning sources and practical experience on real-time projects. My expertise spans HTML, CSS, and Material-UI, ensuring aesthetically pleasing and responsive designs. Proficient in both JavaScript and TypeScript, I build dynamic and robust applications using ReactJS and Redux for efficient state management. On the backend, I leverage ExpressJS and MongoDB to create scalable and high-performance APIs, while my knowledge of SQL enables me to manage and optimize relational databases effectively. My comprehensive background and hands-on project experience make me adept at delivering seamless, full-stack solutions.',
+}
+
+export enum CONTACTTITLES {
+  PHONE = 'Phone',
+  PHONE_NO = '9345001738',
+  EMAIL = 'Email',
+  EMAIL_ID = 'unnalmudiyum6@gmail.com',
+  ADDRESS = 'Address',
+  CURRENT_ADDRESS = 'Chennai,Tamil Nadu,India',
+  SUBMIT = 'Submit',
 }
