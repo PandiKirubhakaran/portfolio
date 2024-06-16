@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #242b33;
+    color: white;
+  }
+  
+  .copyright {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .homeLink {
+    color: #e58c33;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  
+  .homeLink:hover {
+    text-decoration: underline;
+  }
+  
+  .socialMedia a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .socialMedia a:hover {
+    color: #0077B5; /* Change to a different color on hover if you like */
+  }
+  

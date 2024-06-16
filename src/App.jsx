@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,12 +14,9 @@ function App() {
         <section id="home">
           <Home />
         </section>
-        <div data-aos="zoom-in-up">
          <section id="about">
           <About />
         </section>
-         </div>
-
         <section id="skills">
           <Skills />
         </section>
@@ -29,6 +27,7 @@ function App() {
           <Contact />
         </section>
       </main>
+      <Footer/>
     </div>
   );
 }

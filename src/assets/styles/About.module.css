@@ -16,7 +16,8 @@
 .swing:after{
     content: '';
     position: absolute;  
-    width: 20px; height: 20px;  
+    width: 20px; 
+    height: 20px;  
     border: 1px solid #999;
     top: -10px; left: 50%;
     z-index: 0;
@@ -35,7 +36,21 @@
     background: #000;
 }
  
+.aboutPara{
+    font-size: 24px;
+    color: #A6ADB5
+}
+
 @keyframes swing {
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
+}
+
+@media (max-width: 900px) {
+    .aboutContainer{
+        height: 60vh;
+    }
+    .aboutPara{
+        font-size: 18px;
+    }
 }

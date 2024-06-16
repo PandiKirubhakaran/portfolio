@@ -27,7 +27,8 @@
 
 .progressbarTitle .percent {
   position: absolute;
-  right: 5px;
+  right: 10px;
+  top:25px
 }
 
 .barContainer {
@@ -48,6 +49,11 @@
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
+}
+
+.techName{
+  font-size: 24px;
+  color:#a6adb5 ;
 }
 
 .progressRed {
@@ -127,5 +133,17 @@
 
   .skillsBarContainer {
     min-width: 300px;
+    width: 80%;
+    padding: 0px;
+  }
+  .techName{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skillsBarContainer {
+    min-width: 280px;
+    width: 80%;
   }
 }

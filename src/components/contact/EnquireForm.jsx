@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import classes from '../../assets/styles/Contact.module.css';
 import { CONTACTTITLES } from '../../enum';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const EnquireForm = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000, 
+    });
+  },[])
+  
   return (
-    <div className={classes.container}>
+    <div className={classes.container}  data-aos="flip-left">
       <form action="#">
         <div className={classes.fields}>
           <div className={classes.name}>

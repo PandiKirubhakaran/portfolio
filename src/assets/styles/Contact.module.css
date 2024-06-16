@@ -134,9 +134,15 @@
 
 @media (max-width: 900px) {
   .contactWrapper {
-    display: block;
+    flex-wrap: wrap;
   }
   .myContact{
-    display: block;
+    flex-wrap: wrap;
+  }
+  .icon {
+    font-size: 28px;
+  }
+  .contactDetails {
+    font-size: 16px;
   }
 }

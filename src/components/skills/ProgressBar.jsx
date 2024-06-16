@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { faChampagneGlasses } from '@fortawesome/free-solid-svg-icons';
 import classes from '../../assets/styles/Skills.module.css';
 
 const ProgressBar = ({ skills }) => {
@@ -14,12 +17,20 @@ const ProgressBar = ({ skills }) => {
     });
   }, [skills]);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
+
   return (
-    <ul className={classes.skillsBarContainer}>
+    <ul className={classes.skillsBarContainer} data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       {skills.map((skill) => (
         <li key={skill.name}>
           <div className={classes.progressbarTitle}>
-            <h3>{skill.name}</h3>
+            <h3 className={classes.techName}>{skill.name}</h3>
               <span
                 className={classes.percent}
                 id={`${skill.name}pourcent`}
