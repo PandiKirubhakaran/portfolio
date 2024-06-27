@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import resume from '../../assets/file/sample.pdf';
+import resume from '../../assets/file/my_resume.pdf';
 import classes from '../../assets/styles/Home.module.css';
 import { HOMETITLES } from '../../enum';
 
